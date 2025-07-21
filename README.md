@@ -1,6 +1,6 @@
 # DataTracks UI Components
 
-A standardized React component library for internal enterprise web applications. Built with TypeScript, Vite, and [shadcn/ui](https://ui.shadcn.com/), this library provides production-ready, type-safe, and consistent UI components to accelerate development and ensure design consistency across projects.
+A standardized React component library for internal web applications. Built with TypeScript, Vite, and [shadcn/ui](https://ui.shadcn.com/), this library provides production-ready, type-safe, and consistent UI components to accelerate development and ensure design consistency across projects.
 
 > **Note:** Many foundational components and styles are based on [shadcn/ui](https://ui.shadcn.com/), ensuring modern design, accessibility, and easy extensibility.
 
