@@ -10,6 +10,7 @@ A standardized React component library for internal web applications. Built with
 - **shadcn/ui Foundation:** Built on top of shadcn/ui, providing accessible, customizable, and well-tested primitives for rapid development.
 - **Type Safety:** Full TypeScript implementation with comprehensive type definitions for reliable development workflow.
 - **Production Ready:** Optimized components with minimal bundle impact and efficient rendering for production applications.
+- **Dark/Light Theme Support:** Complete theme system with automatic system preference detection and manual theme switching.
 
 ## Quick Start
 
@@ -24,6 +25,17 @@ A standardized React component library for internal web applications. Built with
    Navigate through available components and their usage patterns.
 3. **Configure Properties**
    Use the controls panel in Storybook to test different component configurations.
+
+### Theme System
+
+The application includes a comprehensive theme system with:
+
+- **Automatic System Detection:** Automatically detects and applies the user's system theme preference
+- **Manual Theme Switching:** Users can manually switch between light, dark, and system themes
+- **Persistent Storage:** Theme preference is saved in localStorage and persists across sessions
+- **Smooth Transitions:** All theme changes include smooth transitions for a polished user experience
+
+To switch themes, use the theme toggle button in the header (sun/moon icon).
 
 ## Documentation
 
