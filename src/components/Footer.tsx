@@ -1,31 +1,65 @@
+import { useTheme } from "../lib/theme";
+import { Button } from "./ui/button";
+
 export default function Footer() {
+  const { resolvedTheme } = useTheme();
+
   return (
-    <footer className="text-white" style={{ backgroundColor: "#000033" }}>
+    <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <div className="p-2 bg-white rounded-lg flex items-center justify-center">
-              <img
-                src="/dt-logotype.png"
-                alt="DataTracks"
-                className="max-h-10"
-              />
-            </div>
+            <img
+              src={
+                resolvedTheme === "dark"
+                  ? "/dt-logotype.png"
+                  : "/dt-logotype-light.png"
+              }
+              alt="DataTracks"
+              className="max-h-10"
+            />
           </div>
 
-          <div className="flex items-center space-x-8 text-gray-400">
-            <a href="#" className="hover:text-orange-300 transition-colors">
-              Storybook
-            </a>
-            <a
-              href="https://github.com/copods/datatracks-ui-components"
-              className="hover:text-orange-300 transition-colors"
+          <div className="flex items-center space-x-8 text-primary-foreground/70">
+            {/*<Button
+              variant="link"
+              className="px-0 text-primary-foreground"
+              asChild
             >
-              GitHub
-            </a>
-            <a href="#" className="hover:text-orange-300 transition-colors">
-              Documentation
-            </a>
+              <a
+                href="https://github.com/copods/datatracks-ui-components"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Text Editor
+              </a>
+            </Button>*/}
+            <Button
+              variant="link"
+              className="px-0 text-primary-foreground"
+              asChild
+            >
+              <a
+                href="http://localhost:6006"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Storybook
+              </a>
+            </Button>
+            <Button
+              variant="link"
+              className="px-0 text-primary-foreground"
+              asChild
+            >
+              <a
+                href="https://github.com/copods/datatracks-ui-components"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </Button>
           </div>
         </div>
       </div>

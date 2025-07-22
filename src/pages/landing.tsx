@@ -6,7 +6,7 @@ import QuickStartSection from "../components/QuickStartSection";
 
 const Landing = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-gray-50 to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-accent/10">
       <Header />
       <HeroSection />
       <QuickStartSection />
