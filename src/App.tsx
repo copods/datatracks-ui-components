@@ -1,10 +1,12 @@
+import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { ThemeProvider } from "./lib/theme";
-import Landing from "./pages/landing";
+import { routeTree } from "./routeTree.gen";
 
 const App = () => {
+  const router = createRouter({ routeTree });
   return (
     <ThemeProvider>
-      <Landing />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 };
