@@ -1,7 +1,9 @@
 import { Icon } from "@iconify/react";
+import { useState } from "react";
 import { Button } from "./ui/button";
 
 export default function HeroSection() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <section className="max-w-7xl mx-auto px-6 py-20">
       <div className="text-center max-w-4xl mx-auto">
@@ -21,6 +23,26 @@ export default function HeroSection() {
             >
               shadcn/ui
             </a>
+          </div>
+        </div>
+
+        <div
+          className="relative mx-auto my-12 w-16 h-16 flex items-center justify-center"
+          onMouseOver={() => {
+            setIsHovered(true);
+          }}
+          onMouseLeave={() => {
+            setIsHovered(false);
+          }}
+        >
+          <div
+            className={`w-0 h-0 ${isHovered ? "w-16 h-16" : "w-0 h-0"} transition-all duration-700 bg-accent rounded-full`}
+          ></div>
+          <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+            <Icon
+              icon="streamline:star-2-solid"
+              className={`w-8 h-8 text-red-600 ${isHovered ? "rotate-180" : ""} transition-transform duration-700`}
+            />
           </div>
         </div>
 

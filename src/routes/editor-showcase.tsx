@@ -7,7 +7,6 @@ const EditorShowcase = () => {
         Lexical Editor Showcase
       </h1>
       <div className="bg-card border border-border rounded-lg p-8 min-h-[300px] flex items-center justify-center text-muted-foreground text-xl">
-        {/* TODO: Replace this with the actual Lexical Editor component */}
         <span>Editor component placeholder</span>
       </div>
     </main>

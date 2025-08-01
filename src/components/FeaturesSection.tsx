@@ -3,7 +3,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 export default function FeaturesSection() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16">
+    <section className="max-w-7xl w-full mx-auto px-6 py-16">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-foreground mb-4">
           Component Standards

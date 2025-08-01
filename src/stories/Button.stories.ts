@@ -24,6 +24,11 @@ const meta = {
         "destructive",
       ],
     },
+    loading: {
+      control: "boolean",
+      defaultValue: false,
+      description: "Whether the button is loading",
+    },
     disabled: {
       control: "boolean",
       defaultValue: false,
@@ -33,7 +38,7 @@ const meta = {
       control: "select",
       defaultValue: "default",
       description: "The size of the button",
-      options: ["default", "sm", "lg"],
+      options: ["default", "sm", "lg", "icon"],
     },
   },
   args: { onClick: fn() },
